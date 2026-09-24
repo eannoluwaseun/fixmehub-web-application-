@@ -1,2 +1,16 @@
+[project]
+name = "fixmehub-web-application"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.116.1",
+  "uvicorn[standard]==0.35.0",
+  "SQLAlchemy==2.0.43",
+  "psycopg[binary]==3.2.10",
+  "PyJWT==2.10.1",
+  "passlib[bcrypt]==1.7.4",
+  "python-multipart==0.0.20",
+]
+
 [tool.vercel]
 entrypoint = "app.main:app"
